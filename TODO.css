@@ -1,0 +1,109 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: large;
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #cbcaca;
+    /* #333 */
+    font-family: 'Tilt Prism', cursive;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #6b6a6a;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    color: #b4b4b4;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.buttons button {
+    display: block;
+    width: 100px;
+    padding: 8px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: large;
+}
+
+.buttons button:hover {
+    background-color: #333;
+}
+
+.buttons button.new {
+    background-color: #6ebc3b;
+}
+
+.buttons button.new:hover {
+    box-shadow: 0 0 8px 4px #a6fc6c;
+}
+
+.buttons button.list {
+    background-color: #3b9dc1;
+}
+
+.buttons button.list:hover {
+    box-shadow: 0 0 8px 4px #7bdcff;
+}
+
+.buttons button.delete {
+    background-color: #c13b3b;
+}
+
+.buttons button.delete:hover {
+    box-shadow: 0 0 8px 4px #ff7272;
+}
+
+.buttons button.quit {
+    background-color: #999;
+}
+
+.buttons button.quit:hover {
+    box-shadow: 0 0 8px 4px #f4f4f4;
+}
+
+#output {
+    font-family: 'Shadows Into Light', cursive;
+    background-color: #c4c4c4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: calc(100% - 140px);
+    /* Adjust the value as per your preference */
+    height: 200px;
+    overflow-y: auto;
+}
